@@ -20,20 +20,7 @@ class MyUtil {
 		}
 		return sc.nextInt();
 	}
-	static public String getName()
-	{
-		boolean isValidName;// = true;
-		String name;
-		do {
-			isValidName = true;
-			name = sc.nextLine();
-			if (name.matches("\\W")) {
-				System.out.println("Invalid data!");
-				isValidName = false;
-			}
-		} while (!isValidName);
-		return name;
-	}
+	
 	static public int getMin(int r, int l)
 	{
 		return (l < r) ? l : r;
@@ -43,24 +30,7 @@ class MyUtil {
 		return getMin(getMin(getMin(v1, v2), v3), v4);
 	}
 }
-class Point {
-	public Point(int _x, int _y)
-	{
-		x = _x;
-		y = _y;
-	}
-	public int x, y;
-	public int getQuarter() 
-	{
-		if(x == 0 || y == 0) return 0;	
-		if(x > 0) {
-			if(y>0) return 1; 
-			else return 4;
-		} 
-		if(y>0) return 2;
-		else return 3;
-	}
-}
+
 public class Lab2_4_2 {
 
    public static void main(String[] args)

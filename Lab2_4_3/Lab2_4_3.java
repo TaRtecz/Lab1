@@ -20,28 +20,8 @@ class MyUtil {
 		}
 		return sc.nextInt();
 	}
-	static public String getName()
-	{
-		boolean isValidName;// = true;
-		String name;
-		do {
-			isValidName = true;
-			name = sc.nextLine();
-			if (name.matches("\\W")) {
-				System.out.println("Invalid data!");
-				isValidName = false;
-			}
-		} while (!isValidName);
-		return name;
-	}
-	static public int getMin(int r, int l)
-	{
-		return (l < r) ? l : r;
-	}
-	static public int getMin(int v1, int v2, int v3, int v4)
-	{
-		return getMin(getMin(getMin(v1, v2), v3), v4);
-	}
+	
+	
 }
 class Point {
 	public Point(int _x, int _y)
@@ -75,5 +55,5 @@ public class Lab2_4_3 {
 
 		System.out.println(outputMsg);
 	}
-    
+   
 }
