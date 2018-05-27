@@ -32,6 +32,7 @@ class MyUtil {
 		System.out.println();
 	}
 }
+
 public class Lab3_5 {
     public static void main(String[] args)
 	{
